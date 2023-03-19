@@ -19,7 +19,7 @@ sudo minikube start --driver=docker --force
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod1
+  name: mohana
 spec:
   containers:
   - name: cont1
