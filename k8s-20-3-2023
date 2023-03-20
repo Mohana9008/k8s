@@ -26,8 +26,8 @@ STEP-4: CREATE IAM USER WITH ADMIN PERMISSIONS AND CONFIGURE IT IN ANY REGION WI
 
 STEP-5: CREATE INFRA SETUP
 		TO CREATE BUCKET: aws s3api create-bucket --bucket rahams.k8s.local --region us-east-1
-		TO ENABLE VERSION: aws s3api put-bucket-versioning --bucket rahams.k8s.local --region us-east-1 --versioning-configuration Status=Enabled
-		EXPORT CLUSTER DATA INTO BUCKET: export KOPS_STATE_STORE=s3://rahams.k8s.local
+		TO ENABLE VERSION: aws s3api put-bucket-versioning --bucket mohana.k8s.local --region us-east-1 --versioning-configuration Status=Enabled
+		EXPORT CLUSTER DATA INTO BUCKET: export KOPS_STATE_STORE=s3://mohana.k8s.local
 		
 		TO CREATE CLUSTER: kops create cluster --name rahams.k8s.local --zones us-east-1a --master-size t2.medium --node-size t2.micro
 		TO SEE THE CLUSTER: kops get cluster
