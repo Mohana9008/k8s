@@ -12,6 +12,8 @@ STEP-3: INSTALL KOPS & KUBECTL
 		MOVE FILES:  mv kubectl /usr/local/bin/kubectl
 		MOVE FILES:  mv kops-linux-amd64  /usr/local/bin/kops
 		TO SEE VERSION: kubectl version & kops version
+		
+		*********while excuting remove permissions, movefile,move file,to see version.**********************
 
 TO  CHECK VERSION: /usr/local/bin/aws --version
 		TO SET PATH: vim .bashrc
